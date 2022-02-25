@@ -1,4 +1,4 @@
-var animaux = [
+const animaux = [
   {
     name: "ours",
     domestic: false,

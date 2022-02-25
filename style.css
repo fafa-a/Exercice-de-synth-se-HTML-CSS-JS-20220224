@@ -19,7 +19,8 @@ div:nth-of-type(2) img {
   height: 85px;
   margin: 5px;
   border: 1px solid gray;
-  cursor: pointer;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
 div:nth-of-type(2) img:hover {

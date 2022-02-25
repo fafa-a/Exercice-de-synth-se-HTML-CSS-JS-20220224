@@ -1,4 +1,4 @@
-const divResult = document.getElementsByTagName("div")[1]
+const divResult = document.querySelector("div:nth-of-type(2)")
 
 animaux.forEach(element => {
   divResult.innerHTML += `<img id='${element.name}' src='images/${element.file}'/>`
@@ -23,9 +23,7 @@ document
 document
   .querySelector("button:nth-of-type(2)")
   .addEventListener("click", function () {
-    animaux
-      .filter(animal => animal.domestic)
-      .forEach(el => {
-        document.getElementById(el.name).style.display = "inline"
-      })
+    animaux.forEach(el => {
+      document.getElementById(el.name).style.display = "inline"
+    })
   })
